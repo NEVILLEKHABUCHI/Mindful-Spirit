@@ -5,17 +5,36 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
         let currentScrollY = window.scrollY;
 
-        if (currentScrollY < lastScrollY) {
-            // Scrolling up and not at the top of the page - fix the navbar
+        // if (currentScrollY < lastScrollY) {
+        //     // Scrolling up and not at the top of the page - fix the navbar
+        //     navBar.style.position = "fixed";
+        //     navBar.style.top = "0";
+        //     navBar.style.width = "100%";
+        //     navBar.style.zIndex = "1000";
+        // } else {
+        //     // At the very top - revert navbar to normal position
+        //     navBar.style.position = "relative";
+        //     navBar.style.width = "auto"; // Reset width
+        //     navBar.style.zIndex = "auto"; // Reset stacking order
+        // }
+        if (currentScrollY === 0) {
+            // At the very top - revert navbar to normal position
+            navBar.style.position = "relative";
+            navBar.style.top = "auto";
+            navBar.style.width = "auto";
+            navBar.style.zIndex = "auto";
+        } else if (currentScrollY < lastScrollY) {
+            // Scrolling up - fix the navbar
             navBar.style.position = "fixed";
             navBar.style.top = "0";
             navBar.style.width = "100%";
             navBar.style.zIndex = "1000";
         } else {
-            // At the very top - revert navbar to normal position
+            // Scrolling down - hide the navbar
             navBar.style.position = "relative";
-            navBar.style.width = "auto"; // Reset width
-            navBar.style.zIndex = "auto"; // Reset stacking order
+            navBar.style.top = "auto";
+            navBar.style.width = "auto";
+            navBar.style.zIndex = "auto";
         }
 
         lastScrollY = currentScrollY;
