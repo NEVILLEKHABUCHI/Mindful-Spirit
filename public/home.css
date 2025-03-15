@@ -10,19 +10,12 @@
 body {
     overflow-y: scroll;
     overflow-x: hidden;
-    /* background-color: #1B7865; */
 }
 .homeContainer {
     width: 100vw;
     height: max-content;
 }
-.homeContainer .landingContent {
-    width: inherit;
-    height: 100vh;
-    background-color: #1B7865;
-    color: white;
-}
-.homeContainer .landingContent .navBar {
+.homeContainer .navBar {
     width: inherit;
     height: 20vh;
     display: flex;
@@ -32,111 +25,191 @@ body {
     position: relative;
     transition: all 0.3s ease-in-out;
     background-color: #1B7865;
-    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.homeContainer .landingContent .navBar .left {
+.homeContainer .navBar .left {
     width: 20vw;
     height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.homeContainer .landingContent .navBar .left img {
+.homeContainer .navBar .left img {
     width: inherit;
     object-fit: cover;
 }
-.homeContainer .landingContent .navBar .right {
+.homeContainer .navBar .right {
     width: 50vw;
     display: flex;
     justify-content: space-between;
 }
-.homeContainer .landingContent .navBar .right a {
+.homeContainer .navBar .right a {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
-.homeContainer .landingContent .navBar .right a:hover {
+.homeContainer .navBar .right a:hover {
     color: pink;
 }
-.homeContainer .landingContent .navBar .right-icon {
+.homeContainer .navBar .right-icon {
     display: none;
 }
-.homeContainer .landingContent .welcome-message {
+/* Styling the 'body' div in the homeContainer */
+.homeContainer .body {
     width: inherit;
     height: max-content;
+}
+.homeContainer .body .welcome-message {
+    width: inherit;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 5vh; */
+    background-color: #1B7865;
+    color: white;
 }
-.homeContainer .landingContent .welcome-message .content {
+.homeContainer .body .welcome-message .content {
     width: 90vw;
-    padding-top: 5vh;
-    height: max-content;
-    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: Arial, Helvetica, sans-serif;
 }
-.homeContainer .landingContent .welcome-message .content p:first-of-type {
+.homeContainer .body .welcome-message .content p:first-of-type {
     font-size: 1.2rem;
 }
-.homeContainer .landingContent .welcome-message .content p:nth-of-type(2) {
+.homeContainer .body .welcome-message .content p:nth-of-type(2) {
     font-size: 4rem;
 }
-.homeContainer .landingContent .welcome-message .content p:nth-of-type(3) {
+.homeContainer .body .welcome-message .content p:nth-of-type(3) {
     font-size: 1.7rem;
 }
-.homeContainer .landingContent .welcome-message a {
+.homeContainer .body .welcome-message .content button {
     padding: 15px;
-    background-color: #EF9B0F;
+    border: none;
     border-radius: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
-    letter-spacing: 1px ;
-    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #EF9B0F;
 }
-.homeContainer .body {
+.homeContainer .body .welcome-message .content button a {
+    letter-spacing: 1px;
+    color: white;
+}
+.homeContainer .body .welcome-question {
     width: inherit;
     height: 15vh;
-    background-color: #1B7865;
     display: flex;
     justify-content: center;
+    background-color: #1B7865;
 }
-.homeContainer .body .container {
+.homeContainer .body .welcome-question .content {
     width: 80vw;
     height: max-content;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
-.homeContainer .body .container p {
+.homeContainer .body .welcome-question .content p {
     text-align: center;
     letter-spacing: 1px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
-.homeContainer .body .container p:first-of-type {
+.homeContainer .body .invitation {
+    margin-top: 30vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.homeContainer .body .invitation h1 {
+    text-align: center;
+    color: #1B7865;
+    padding-bottom: 10px;
+    font-size: 3rem;
+}
+.homeContainer .body .invitation #underline {
+    display: flex;
+    justify-content: center;
+}
+.homeContainer .body .invitation #underline span {
+    width: 60vw;
+    height: 2px;
+    background-color: #1B7865;
+}
+.homeContainer .body .invitation #invitation-letter {
+    padding: 40px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.homeContainer .body .kenMessage {
+    width: inherit;
+    height: 30vh;
+    background-color: #E8F1F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.homeContainer .body .kenMessage p {
+    width: 70vw;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.homeContainer .body .kenMessage h2 {
     color: #1B7865;
 }
+.homeContainer .body .supportTeam {
+    width: inherit;
+    height: 30vh;
+    background-color: #1B7865;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeContainer .body .supportTeam p {
+    width: 80vw;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.homeContainer .body .supportTeam a {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+.homeContainer .body .addition {
+    width: inherit;
+    height: max-content;
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeContainer .body .addition .holistic-healing {
+    width: 80vw;
+    height: 40vh;
+    background-color: red;
+}
 
+/* Media querying */
 @media only screen and (max-width: 900px) {
-    .homeContainer .landingContent {
-        height: max-content;
-    }
-    .homeContainer .landingContent .navBar {
+    .homeContainer .navBar {
         height: 15vh;
     }
-    .homeContainer .landingContent .navBar .left {
+    .homeContainer .navBar .left {
         width: 50vw;
         opacity: 1;
     }
-    .homeContainer .landingContent .navBar .left.hidden {
+    .homeContainer .navBar .left.hidden {
         opacity: 0;
     }
-    .homeContainer .landingContent .navBar .right {
-        width: inherit;
-        height: 90vh;
+    .homeContainer .navBar .right {
+        width: 100vw;
+        height: 100vh;
         background-color: #1B7865;
         position: absolute;
         top: 15vh;
@@ -148,64 +221,56 @@ body {
         align-items: center;
         display: none;
     }
-    .homeContainer .landingContent .navBar .right.visible {
+    .homeContainer .navBar .right.visible {
         display: flex;
     }
-    .homeContainer .landingContent .navBar .right-icon {
+    .homeContainer .navBar .right-icon {
         display: block;
-    }
-    /* .homeContainer .landingContent .navBar .right-icon i {
-        font-size: 2.5rem;
-        color: white;
-    } */
-    .homeContainer .landingContent .navBar .right-icon {
         width: 30px;
         height: 24px;
         position: relative;
         cursor: pointer;
     }
-    .homeContainer .landingContent .navBar .right-icon .bar {
+    .homeContainer .navBar .right-icon .bar {
         width: 100%;
         height: 4px;
         background-color: white;
         position: absolute;
-        transition: all 0.3s ease;
+        transition: all 0.3 ease;
     }
-    .homeContainer .landingContent .navBar .right-icon .bar:nth-of-type(2) {
-        height: 3px;
-    }
-    .homeContainer .landingContent .navBar .right-icon .top {
+    .homeContainer .navBar .right-icon .top {
         top: 0;
     }
-    .homeContainer .landingContent .navBar .right-icon .middle {
+    .homeContainer .navBar .right-icon .middle {
+        height: 3px;
         top: 50%;
         transform: translateY(-50%);
     }
-    .homeContainer .landingContent .navBar .right-icon .bottom {
+    .homeContainer .navBar .right-icon .bottom {
         bottom: 0;
     }
-    .homeContainer .landingContent .navBar .right-icon.active .top {
+    .homeContainer .navBar .right-icon.active .top {
         transform: translateY(10px) rotate(45deg);
     }
-    .homeContainer .landingContent .navBar .right-icon.active .middle {
+    .homeContainer .navBar .right-icon.active .middle {
         opacity: 0;
     }
-    .homeContainer .landingContent .navBar .right-icon.active .bottom {
+    .homeContainer .navBar .right-icon.active .bottom {
         transform: translateY(-10px) rotate(-45deg);
     }
-    .homeContainer .landingContent .welcome-message .content {
-        padding-top: 0;
+    .homeContainer .body .welcome-message {
+        height: 90vh;
     }
-    .homeContainer .landingContent .welcome-message .content p:first-of-type {
-        font-size: 1rem;
-    }
-    .homeContainer .landingContent .welcome-message .content p:nth-of-type(2) {
-        font-size: 2rem;
-    }
-    .homeContainer .landingContent .welcome-message .content p:nth-of-type(3) {
+    .homeContainer .body .welcome-message .content p:first-of-type {
         font-size: 1.5rem;
     }
-    .homeContainer .landingContent .welcome-message a {
+    .homeContainer .body .welcome-message .content p:nth-of-type(2) {
+        font-size: 3.5rem;
+    }
+    .homeContainer .body .welcome-message .content p:nth-of-type(3) {
+        font-size: 2.1rem;
+    }
+    .homeContainer .body .welcome-message button {
         display: none;
     }
 }
