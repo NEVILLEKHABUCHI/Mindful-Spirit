@@ -1,76 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-* a {
-    text-decoration: none;
-}
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-.aboutContainer {
-    width: 100vw;
-    height: max-content;
-}
 .aboutContainer .navBar {
-    width: inherit;
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5vw;
-    position: relative;
-    transition: all 0.3s ease-in-out;
     background-color: #E8F1F0;
-    
-}
-.aboutContainer .navBar .left {
-    width: 20vw;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.aboutContainer .navBar .left img {
-    width: inherit;
-    object-fit: cover;
-}
-.aboutContainer .navBar .right {
-    width: 50vw;
-    display: flex;
-    justify-content: space-between;
 }
 .aboutContainer .navBar .right a {
-    color: #1B7865;;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-.aboutContainer .navBar .right a:hover {
-    color: pink;
-}
-.aboutContainer .navBar .right-icon {
-    display: none;
-}
-.aboutContainer .body {
-    width: inherit;
-    height: max-content;
+    color: #1B7865;
 }
 .aboutContainer .body .welcome-message {
-    width: inherit;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #E8F1F0;
-}
-.aboutContainer .body .welcome-message .content {
-    width: 80vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .aboutContainer .body .welcome-message .content p:first-of-type {
     font-size: 4rem;
@@ -87,7 +22,7 @@ body {
 }
 .aboutContainer .body .achievement .content {
     width: 80vw;
-    height: 50vh;
+    /* height: 50vh; */
     padding: 30px;
     border-radius: 20px;
     position: absolute;
@@ -104,7 +39,7 @@ body {
 }
 .aboutContainer .body .achievement .content .figures .figure {
     width: 20vw;
-    height: 10vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,4 +51,185 @@ body {
 .aboutContainer .body .achievement .content .figures .figure p:first-of-type {
     font-size: 4rem;
     color: #1B7865;
+}
+.aboutContainer .body .whoWeAre {
+    width: inherit;
+    height: max-content;
+    margin-top: 55vh;
+    display: flex;
+    justify-content: center;
+}
+.aboutContainer .body .whoWeAre .content {
+    width: 80vw;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutContainer .body .whoWeAre .content .left {
+    width: 40vw;
+}
+.aboutContainer .body .whoWeAre .content .left h2 {
+    color: #EF9B0F;
+}
+.aboutContainer .body .whoWeAre .content .left p {
+    font-size: 1.2rem;
+    /* letter-spacing: 1px; */
+}
+.aboutContainer .body .whoWeAre .content .right {
+    width: 35vw;
+    height: max-content;
+}
+.aboutContainer .body .whoWeAre .content .right img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.aboutContainer .body .psychotherapy {
+    width: inherit;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+    background-color: #1B7865;
+    margin-top: 10vh;
+}
+.aboutContainer .body .psychotherapy .content {
+    width: 90vw;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutContainer .body .psychotherapy .content .left {
+    width: 25vw;
+    height: max-content;
+}
+.aboutContainer .body .psychotherapy .content .left img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.aboutContainer .body .psychotherapy .content .right {
+    width: 60vw;
+    color: white;
+}
+.aboutContainer .body .psychotherapy .content .right h2 {
+    color: #EF9B0F;
+    font-size: 2rem;
+}
+.aboutContainer .body .psychotherapy .content .right p {
+    font-size: 1.2rem;
+}
+.aboutContainer .body .principles {
+    width: inherit;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    padding: 2vh 0;
+    margin-top: 10vh;
+}
+.aboutContainer .body .principles .content {
+    width: 80vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.aboutContainer .body .principles .content h2 {
+    text-align: center;
+    color: #EF9B0F;
+    font-size: 2rem;
+}
+.aboutContainer .body .principles .content .words {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #1B7865;
+    border-bottom: 2px solid #1B7865;
+    padding: 5vh 0;
+}
+.aboutContainer .body .principles .content .words .left,
+.aboutContainer .body .principles .content .words .right {
+    width: 39vw;
+    font-size: 1.2rem;
+}
+.aboutContainer .body .principles .button {
+    display: flex;
+    justify-content: center;
+}
+.aboutContainer .body .principles .button button {
+    /* width: 15vw; */
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #EF9B0F;
+    font-size: 1.2rem;
+}
+.aboutContainer .body .principles .button button:hover {
+    background-color: #1B7865;
+    color: white;
+}
+.aboutContainer .contactUsDiv {
+    margin-top: 10vh;
+}
+
+/* Media querying */
+@media only screen and (max-width: 900px) {
+    .aboutContainer .navBar .right {
+        background-color: #E8F1F0;
+    }
+    .aboutContainer .navBar .right-icon .bar {
+        background-color: #1B7865;
+    }
+    .aboutContainer .body .welcome-message .content p:first-of-type {
+        font-size: 3rem;
+    }
+    .aboutContainer .body .welcome-message .content p:nth-of-type(2) {
+        font-size: 1.5rem;
+    }
+    .aboutContainer .body .achievement .content {
+        width: 90vw;
+    }
+    .aboutContainer .body .achievement .content .figures {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .aboutContainer .body .achievement .content .figures .figure {
+        width: inherit;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutContainer .body .whoWeAre {
+        margin-top: 120vh;
+    }
+    .aboutContainer .body .whoWeAre .content {
+        width: 90vw;
+        height: max-content;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 4vh;
+    }
+    .aboutContainer .body .whoWeAre .content .left {
+        width: inherit;
+    }
+    .aboutContainer .body .whoWeAre .content .right {
+        width: inherit;
+    }
+    .aboutContainer .body .psychotherapy .content .left {
+        display: none;
+    }
+    .aboutContainer .body .psychotherapy .content .right {
+        width: inherit;
+    }
+    .aboutContainer .body .principles .content .words {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .aboutContainer .body .principles .content .words .left,
+    .aboutContainer .body .principles .content .words .right {
+        width: inherit;
+    }
 }
