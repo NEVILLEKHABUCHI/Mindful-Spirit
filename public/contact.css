@@ -1,0 +1,14 @@
+.contactContainer {
+    width: inherit;
+    height: max-content;
+}
+.contactContainer .top {
+    width: inherit;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.contactContainer .top p {
+    width: 30vw;
+    font-size: 4rem;
+}

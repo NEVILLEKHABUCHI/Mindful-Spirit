@@ -1,0 +1,79 @@
+.resourcesContainer .navBar {
+    background-color: #E8F1F0;
+}
+.resourcesContainer .navBar .right a {
+    color: #1B7865;
+}
+.resourcesContainer .body .welcome-message {
+    background-color: #E8F1F0;
+}
+.resourcesContainer .body .welcome-message .content p:first-of-type {
+    font-size: 4rem;
+}
+.resourcesContainer .body .welcome-message .content p:nth-of-type(2) {
+    font-size: 1.5rem;
+}
+.resourcesContainer .body .resources {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+}
+.resourcesContainer .body .resources .content {
+    width: 90vw;
+    height: max-content;
+}
+.resourcesContainer .body .resources .content #intro {
+    font-size: 1.3rem;
+}
+.resourcesContainer .body .resources .content .books {
+    width: inherit;
+    height: inherit;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.resourcesContainer .body .resources .content .books .left,
+.resourcesContainer .body .resources .content .books .right {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2ch;
+}
+.resourcesContainer .body .resources .content .books .left img,
+.resourcesContainer .body .resources .content .books .right img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.resourcesContainer .body .resources .content .books .left p,
+.resourcesContainer .body .resources .content .books .right p {
+    font-size: 1.2rem;
+}
+.resourcesContainer .body .resources .content .books .left button,
+.resourcesContainer .body .resources .content .books .right button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #EF9B0F;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .resourcesContainer .navBar .right {
+        background-color: #E8F1F0;
+    }
+    .resourcesContainer .navBar .right-icon .bar {
+        background-color: #1B7865;
+    }
+    .resourcesContainer .body .resources .content .books {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .resourcesContainer .body .resources .content .books .left,
+    .resourcesContainer .body .resources .content .books .right {
+        width: inherit;
+    }
+}

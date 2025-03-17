@@ -1,76 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-* a {
-    text-decoration: none;
-}
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-.servicesContainer {
-    width: 100vw;
-    height: max-content;
-}
 .servicesContainer .navBar {
-    width: inherit;
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5vw;
-    position: relative;
-    transition: all 0.3s ease-in-out;
     background-color: #E8F1F0;
-    
-}
-.servicesContainer .navBar .left {
-    width: 20vw;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.servicesContainer .navBar .left img {
-    width: inherit;
-    object-fit: cover;
-}
-.servicesContainer .navBar .right {
-    width: 50vw;
-    display: flex;
-    justify-content: space-between;
 }
 .servicesContainer .navBar .right a {
-    color: #1B7865;;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-.servicesContainer .navBar .right a:hover {
-    color: pink;
-}
-.servicesContainer .navBar .right-icon {
-    display: none;
-}
-.servicesContainer .body {
-    width: inherit;
-    height: max-content;
+    color: #1B7865;
 }
 .servicesContainer .body .welcome-message {
-    width: inherit;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #E8F1F0;
-}
-.servicesContainer .body .welcome-message .content {
-    width: 80vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .servicesContainer .body .welcome-message .content p:first-of-type {
     font-size: 4rem;
@@ -185,7 +120,7 @@ body {
     font-size: 1.2rem;
 }
 .servicesContainer .body .healing-modalities .meditation .left button {
-    width: 10vw;
+    /* width: 10vw; */
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -201,59 +136,73 @@ body {
     height: inherit;
     object-fit: cover;
 }
-.servicesContainer .body .footer {
-    width: inherit;
-    height: max-content;
-    margin-top: 10vh;
-    padding: 30px;
-    background-color: #1B7865;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.servicesContainer .body .footer .footerContacts {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-.servicesContainer .body .footer .footerContacts .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.servicesContainer .body .footer .footerContacts .contact i {
-    font-size: 2rem;
-}
-.servicesContainer .body .footer .footerContacts .contact p {
-    text-align: center;
-    font-size: 1.2rem;
-}
-.servicesContainer .body .footer .social-media {
-    /* width: inherit; */
-    padding: 0 10vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 .servicesContainer .body .footer .social-media .right {
     width: 30vw;
     display: flex;
     justify-content: space-between;
 }
-.servicesContainer .body .footer .social-media .right a {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.servicesContainer .body .footer .social-media .right a i {
-    color: black;
-    font-size: 1.5rem;
+
+@media only screen and (max-width: 900px) {
+    .servicesContainer .navBar .right {
+        background-color: #E8F1F0;
+    }
+    .servicesContainer .navBar .right-icon .bar {
+        background-color: #1B7865;
+    }
+    .servicesContainer .body .welcome-message .content p:first-of-type {
+        font-size: 3rem;
+    }
+    .servicesContainer .body .welcome-message .content p:nth-of-type(2) {
+        font-size: 1.5rem;
+    }
+    .servicesContainer .body .healing-modalities h2 {
+        text-align: center;
+        padding: 0 2vw;
+    }
+    .servicesContainer .body .healing-modalities .healing-insights,
+    .servicesContainer .body .healing-modalities .resources {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3vh;
+    }
+    .servicesContainer .body .healing-modalities .healing-insights .left,
+    .servicesContainer .body .healing-modalities .resources .left {
+        width: inherit;
+    }
+    .servicesContainer .body .healing-modalities .healing-insights .right,
+    .servicesContainer .body .healing-modalities .resources .right {
+        width: inherit;
+        height: max-content;
+    }
+    .servicesContainer .body .healing-modalities .healing-insights .right .top p:nth-of-type(2),
+    .servicesContainer .body .healing-modalities .resources .right .top p:nth-of-type(2) {
+        font-size: 1.5rem;
+    }
+    .servicesContainer .body .healing-modalities .meditation {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3vh;
+    }
+    .servicesContainer .body .healing-modalities .meditation .left {
+        width: inherit;
+        height: max-content;
+    }
+    .servicesContainer .body .healing-modalities .meditation .right {
+        width: inherit;
+    }
+    .servicesContainer .body .healing-modalities .meditation .left .top {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .servicesContainer .body .healing-modalities .meditation .left .top p:nth-of-type(2) {
+        font-size: 1.6rem;
+    }
+    .servicesContainer .body .healing-modalities .resources .right .top {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
 }

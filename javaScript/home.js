@@ -128,3 +128,32 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initial indicator state
     updateIndicators(0);
 });
+
+// script.js
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Function to check scroll position and show/hide the button
+    function toggleScrollToTopButton() {
+        if (window.scrollY > 0.1 * window.innerHeight) { // 90vh threshold
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+
+    // Function to scroll to the top of the document
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Smooth scroll
+        });
+    }
+
+    // Event listener for scroll events
+    window.addEventListener("scroll", toggleScrollToTopButton);
+
+    // Event listener for button click
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+});
