@@ -7,8 +7,9 @@
     height: 50vh;
     display: flex;
     align-items: center;
+    padding-left: 10vw;
 }
 .contactContainer .top p {
-    width: 30vw;
+    width: 40vw;
     font-size: 4rem;
 }

@@ -217,7 +217,7 @@ body {
 }
 .homeContainer .body .contactUs .right form .bottom .captcha-container #captcha,
 .aboutContainer .body .contactUs .right form .bottom .captcha-container #captcha,
-.contactContainer .body .contactUs .right form .bottom .captcha-container #captcha{
+.contactContainer .body .contactUs .right form .bottom .captcha-container #captcha {
     width: 10vw;
     font-size: 2rem;
     filter: blur(2px);
@@ -369,7 +369,8 @@ body {
 .homeContainer #scrollToTopBtn,
 .aboutContainer #scrollToTopBtn,
 .servicesContainer #scrollToTopBtn,
-.resourcesContainer #scrollToTopBtn {
+.resourcesContainer #scrollToTopBtn,
+.contactContainer #scrollToTopBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -384,7 +385,11 @@ body {
     border-radius: 10px;
     font-size: 18px;
 }
-.homeContainer #scrollToTopBtn:hover {
+.homeContainer #scrollToTopBtn:hover,
+.aboutContainer #scrollToTopBtn:hover,
+.servicesContainer #scrollToTopBtn:hover,
+.resourcesContainer #scrollToTopBtn:hover,
+.contactContainer #scrollToTopBtn:hover {
     background-color: #333;
 }
 
